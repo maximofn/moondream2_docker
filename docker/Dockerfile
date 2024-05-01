@@ -12,6 +12,6 @@ RUN pip3 install --no-cache-dir torch torchvision torchaudio --index-url https:/
 
 RUN git clone --depth 1 https://huggingface.co/spaces/vikhyatk/moondream2 \
     && cd moondream2 && pip3 install --no-cache-dir -r requirements.txt \
-    && pip install spaces
+    && pip install --no-cache-dir spaces flash-attn
 
 WORKDIR /moondream2
